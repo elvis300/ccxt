@@ -19,7 +19,7 @@ exchange = ccxt.binance()
 
 def formated_ticker2(exchange, pair):
     print "formated_ticker with ",pair
-    ticker = binance.fetch_ticker(pair)
+    ticker = exchange.fetch_ticker(pair)
     for key, val in ticker[pair].iteritems():
         if key == "last":
             return val
@@ -34,7 +34,7 @@ def printer(draw,exchange, pair):
 
 def main():
 
-  print(binance.id, binance.load_markets())
+  print(exchange.id, exchange.load_markets())
   
 
   global raw
