@@ -34,7 +34,7 @@ def printer(draw,exchange, pair):
 
 def main():
 
-  print(exchange.id, exchange.load_markets())
+  #print(exchange.id, exchange.load_markets())
   
 
   global raw
